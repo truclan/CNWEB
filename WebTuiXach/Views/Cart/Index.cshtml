@@ -1,0 +1,153 @@
+﻿@model List<WebTuiXach.Models.CartModel>
+@{
+    if (ViewBag.cartCount != 0)
+    {
+        ViewBag.count = ViewBag.cartCount;
+    }
+    else
+    {
+        ViewBag.count = 0;
+    }
+    ViewBag.Title = "Giỏ hàng của tôi";
+    Layout = "~/Views/Shared/_viewUser.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item text-dark main-title">Trang chủ</li>
+            <li class="breadcrumb-item active text-dark main-title">Giỏ hàng</li>
+        </ol>
+    </div>
+
+</div>
+<div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="table ">
+            <table class="table table-bordered table-hover bg-white">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Tên hàng</th>
+                        <th>Hình ảnh</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Tổng tiền</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int index = 0;
+                        double total = 0;
+                    }
+                    @if (Model == null || Model.Count == 0)
+                    {
+                        <tr>
+                            <td align="center" colspan="7" style="color: red" class="text-danger">Giỏ hàng trống.....</td>
+                        </tr>
+                    }
+                    else
+
+                    {
+
+                        foreach (var item in Model)
+                        {
+                            index++;
+                            using (Html.BeginForm("updateCart", "Cart", FormMethod.Post))
+                            {
+                                <tr>
+                                    <td>@index
+                                        <input type="hidden" name="id" value="@item.id" />
+                                    </td>
+                                    <td>@item.name</td>
+                                    <td><img src="../asset/uploads/img/@item.path" alt="Product" width="100"></td>
+
+                                    <td>
+                                        <input type="number" value="@item.quantity" name="quantity" class="text-center" min="0" max="100" required>
+                                    </td>
+
+                                    <td>@item.price.ToString("#,##0")đ</td>
+                                    <td>@item.totalPrice.ToString("#,##0")đ</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-primary text-white btn-sm">
+                                            <span class="material-icons">
+                                                change_circle
+                                            </span>
+                                        </button>
+                                        <a href="@Url.Action("removeCart", "Cart", new { @id = item.id })" class="btn btn-danger text-white btn-sm">
+                                            <span class="material-icons">
+                                                delete_outline
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+
+                            total += item.totalPrice;
+                        }
+
+                    }
+
+                    <tr>
+                        <td colspan="5" align="right">Tổng tiền:</td>
+                        <td colspan="2" align="left" class="font-weight-bold">@total.ToString("#,##0")đ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="formPay" class="p-2">
+            <div class="title mb-3 h4">Giao diện đặt hàng</div>
+            @using (Html.BeginForm("createBill", "Cart", FormMethod.Post))
+            {
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="">Họ và tên</label>
+                        <input type="text" name="customerName" id="name" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-3">
+                        <label for="">Số điện thoại</label>
+                        <input type="text" name="phone" id="phone" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small>
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="">Địa chỉ</label>
+                        <input type="text" name="address" id="address" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <button type="submit" class="btn btn-primary mr-3">Đặt hàng</button>
+                        <button type="button" class="btn btn-secondary mr-3" onclick="reset()">Reset</button>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+@section scripts{
+<script>
+    function reset() {
+        $("#name").val("");
+        $("#email").val("");
+        $("#phone").val("");
+        $("#address").val("");
+    }
+
+    </script>
+    }

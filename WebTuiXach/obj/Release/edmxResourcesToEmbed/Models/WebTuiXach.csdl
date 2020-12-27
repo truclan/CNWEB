@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="shoptuixachModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="account">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="birthday" Type="DateTime" Precision="0" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_permission" Type="Int32" />
+    <NavigationProperty Name="permission" Relationship="Self.FK__account__id_perm__403A8C7D" FromRole="account" ToRole="permission" />
+  </EntityType>
+  <EntityType Name="cart">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Boolean" />
+    <NavigationProperty Name="cart_detail" Relationship="Self.FK__cart_deta__id_ca__412EB0B6" FromRole="cart" ToRole="cart_detail" />
+  </EntityType>
+  <EntityType Name="cart_detail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="id_product" Type="Int32" />
+    <Property Name="id_cart" Type="Int32" />
+    <NavigationProperty Name="cart" Relationship="Self.FK__cart_deta__id_ca__412EB0B6" FromRole="cart_detail" ToRole="cart" />
+    <NavigationProperty Name="product" Relationship="Self.FK__cart_deta__id_pr__4222D4EF" FromRole="cart_detail" ToRole="product" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="products" Relationship="Self.FK__product__id_cate__4316F928" FromRole="category" ToRole="product" />
+  </EntityType>
+  <EntityType Name="permission">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="accounts" Relationship="Self.FK__account__id_perm__403A8C7D" FromRole="permission" ToRole="account" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id_category" Type="Int32" />
+    <Property Name="quantity" Type="Int32" />
+    <NavigationProperty Name="cart_detail" Relationship="Self.FK__cart_deta__id_pr__4222D4EF" FromRole="product" ToRole="cart_detail" />
+    <NavigationProperty Name="category" Relationship="Self.FK__product__id_cate__4316F928" FromRole="product" ToRole="category" />
+  </EntityType>
+  <Association Name="FK__account__id_perm__403A8C7D">
+    <End Role="permission" Type="Self.permission" Multiplicity="0..1" />
+    <End Role="account" Type="Self.account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permission">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="account">
+        <PropertyRef Name="id_permission" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__cart_deta__id_ca__412EB0B6">
+    <End Role="cart" Type="Self.cart" Multiplicity="0..1" />
+    <End Role="cart_detail" Type="Self.cart_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cart">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cart_detail">
+        <PropertyRef Name="id_cart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__cart_deta__id_pr__4222D4EF">
+    <End Role="product" Type="Self.product" Multiplicity="0..1" />
+    <End Role="cart_detail" Type="Self.cart_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cart_detail">
+        <PropertyRef Name="id_product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__product__id_cate__4316F928">
+    <End Role="category" Type="Self.category" Multiplicity="0..1" />
+    <End Role="product" Type="Self.product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="id_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="shoptuixachEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="accounts" EntityType="Self.account" />
+    <EntitySet Name="carts" EntityType="Self.cart" />
+    <EntitySet Name="cart_detail" EntityType="Self.cart_detail" />
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="permissions" EntityType="Self.permission" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <AssociationSet Name="FK__account__id_perm__403A8C7D" Association="Self.FK__account__id_perm__403A8C7D">
+      <End Role="permission" EntitySet="permissions" />
+      <End Role="account" EntitySet="accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__cart_deta__id_ca__412EB0B6" Association="Self.FK__cart_deta__id_ca__412EB0B6">
+      <End Role="cart" EntitySet="carts" />
+      <End Role="cart_detail" EntitySet="cart_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__cart_deta__id_pr__4222D4EF" Association="Self.FK__cart_deta__id_pr__4222D4EF">
+      <End Role="product" EntitySet="products" />
+      <End Role="cart_detail" EntitySet="cart_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__product__id_cate__4316F928" Association="Self.FK__product__id_cate__4316F928">
+      <End Role="category" EntitySet="categories" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

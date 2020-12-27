@@ -1,0 +1,79 @@
+﻿@using WebTuiXach.Models;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<product>
+@{
+    if (ViewBag.cartCount != 0)
+    {
+        ViewBag.count = ViewBag.cartCount;
+    }
+    else
+    {
+        ViewBag.count = 0;
+    }
+    ViewBag.Title = "Shop Túi xách";
+    Layout = "~/Views/Shared/_viewUser.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item active text-dark main-title">@ViewBag.Name</li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <div class="cate-title">Danh mục sản phẩm</div>
+        @Html.Action("Index", "Category")
+    </div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid " src="~/asset/uploads/img/@item.path" alt="">
+                        <div class="card-body">
+                            <a href="@Url.Action("LoadDetailsProduct", "Home", new { @id = @item.id })" class="h6 card-title">@item.name</a>
+                            <div class="category d-flex mt-2">
+                                <a href="@Url.Action("loadProductById", "Home", new {@id = item.category.id })" class="category-name mr-2">@item.category.name</a>
+                            </div>
+                            <div class="buy-box mt-2">
+                                <div class="card-price">
+                                    @item.price.ToString("#, ##0,###")₫
+                                </div>
+                                <a href="#" class="btn btn-outline-custom btn-custom">Buy now</a>
+                            </div>
+                        </div>
+                        @if (item.quantity <= 0)
+                        {
+                            <div style="font-size: 3rem;
+                                position: absolute;
+                                width: 100%;
+                                z-index: 900;
+                                background: #00000059;
+                                text-align: center;
+                                padding-top: 50%;
+                                height: 100%;
+                                color: #fff;">Hết hàng</div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="col-3">&nbsp;</div>
+    <div class="col-9">
+        <div class="d-flex justify-content-start align-items-sm-center">
+            <div style="margin-right: 15px;">
+                Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            </div>
+
+            <!--List pagination-->
+            <div>
+                @Html.PagedListPager(Model, page => Url.Action("Index", "Home", new { @page = page }))
+            </div>
+        </div>
+    </div>
+</div>

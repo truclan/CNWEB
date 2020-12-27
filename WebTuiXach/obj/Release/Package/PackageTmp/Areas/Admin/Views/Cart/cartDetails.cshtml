@@ -1,0 +1,71 @@
+﻿@model List<WebTuiXach.Models.cart_detail>
+@{
+    ViewBag.Title = "cartDetails";
+    Layout = "~/Areas/Admin/Views/Shared/_adminView.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item text-dark main-title">Trang chủ</li>
+            <li class="breadcrumb-item active text-dark main-title">Đơn hàng của @ViewBag.name</li>
+        </ol>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card text-left mb-2">
+            <div class="card-body p-3">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item active text-dark">Quản lý hóa đơn</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card text-left">
+            <div class="main-title p-3">Chi tiết đơn hàng</div>
+            <div class="card-body px-3 pb-0 pt-0">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tên sản phẩm</th>
+                            <th scope="col">Hình ảnh</th>
+                            <th scope="col">Số lượng mua</th>
+                            <th scope="col">Đơn giá</th>
+                            <th scope="col">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int index = 0;
+                            double total = 0;
+                            double temp = 0;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            index++;
+                            <tr>
+                                <td>@index</td>
+                                <td>@item.product.name</td>
+                                <td>@item.product.path</td>
+                                <td>@item.quantity</td>
+                                <td>@item.product.price.ToString("#, ##0,###")đ</td>
+                                @(temp = item.product.price * double.Parse(item.quantity.ToString()));
+                                <td>@temp.ToString("#, ##0,###")đ</td>
+                            </tr>
+                            
+                            total += (item.product.price * double.Parse(item.quantity.ToString()));
+                        }
+                        <tr>
+                            <td colspan="5" align="right">Tổng số tiền:</td>
+                            <td align="left" colspan="1">@total.ToString("#, ##0,###")đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

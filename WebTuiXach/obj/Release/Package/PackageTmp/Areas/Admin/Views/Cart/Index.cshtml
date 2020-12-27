@@ -1,0 +1,75 @@
+﻿@model List<WebTuiXach.Models.cart>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_adminView.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card text-left mb-2">
+            <div class="card-body p-3">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item active text-dark">Quản lý hóa đơn</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card text-left">
+            <div class="main-title p-3">Danh sách hóa đơn</div>
+            <div class="card-body px-3 pb-0 pt-0">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Khách hàng</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Trạng thái</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int index = 0;
+                        }
+                        @if (Model == null || Model.Count == 0)
+                        {
+                            <tr>
+                                <td align="center" colspan="7" style="color: red" class="text-danger">Giỏ hàng trống.....</td>
+                            </tr>
+                        }
+                        @foreach (var item in Model)
+                        {
+                            index++;
+                            ViewBag.status = item.status.GetValueOrDefault();
+                            <tr>
+                                <td>@index</td>
+                                <td>@item.customerName</td>
+                                <td>@item.phone</td>
+                                <td>@item.email</td>
+                                <td>@item.address</td>
+                                <td>
+                                    @if (ViewBag.status)
+                                    {
+                                       
+                                        <span>Đã xác nhận</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Chưa xác nhận</span>
+                                    }
+                                    </td>
+                                <td class="d-flex">
+                                    <a href="@Url.Action("cartDetails", "Cart", new { @id = item.id })" class="btn btn-outline-primary btn-sm"><span class="material-icons md-13">visibility</span></a>
+                                    <a href="@Url.Action("successCart", "Cart", new { @id = item.id })" class="btn btn-outline-success btn-sm"><span class="material-icons md-13">check</span></a>
+                                    <a href="@Url.Action("removeCart", "Cart", new { @id = item.id })" class="btn btn-outline-danger btn-sm"><span class="material-icons md-13">delete_outline</span></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

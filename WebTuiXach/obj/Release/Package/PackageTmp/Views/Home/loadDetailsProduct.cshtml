@@ -1,0 +1,63 @@
+﻿@model WebTuiXach.Models.product
+@{
+    if (ViewBag.cartCount != 0) {
+        ViewBag.count = ViewBag.cartCount;
+    }
+    else
+    {
+        ViewBag.count = 0;
+    }
+    Layout = "~/Views/Shared/_viewUser.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item text-dark main-title">Trang chủ</li>
+            <li class="breadcrumb-item active text-dark main-title">Sản phẩm @Model.name</li>
+        </ol>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="img-product cs-point">
+            <img src="~/asset/uploads/img/@Model.path" alt="Product" width="100%" height="100%">
+        </div>
+    </div>
+
+
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="details-product px-3">
+            <div class="product-name h4">@Model.name</div>
+            <a href="@Url.Action("loadProductById", "Home", new {@id = Model.category.id })" class="product-category mt-2">@Model.category.name</a>
+            <div class="product-name d-flex h6 align-items-center">Số lượng: <div class="text-warning ml-1 h4">@Model.quantity</div></div>
+            <div class="product-name d-flex h5">Tình trạng: 
+                @if(Model.quantity <= 0)
+                {
+                    <div class="text-danger ml-1 h4">Hết hàng</div>
+                }else{
+                    <div class="text-warning ml-1 h4">Còn hàng</div>
+            }
+
+            </div>
+            <div class="buy-box my-3">
+                <div class="product-price">@Model.price.ToString("#, ##0,###")₫</div>
+                @if (Model.quantity <= 0)
+                {
+                    <a class="btn btn-sm btn-custom btn-outline-custom" style="cursor: not-allowed" disabled>Buy</a>
+                }
+                else
+                {
+                    <a href="@Url.Action("addCart", "Cart", new { @id = Model.id })" class="btn btn-sm btn-custom btn-outline-custom">Buy</a>
+                }
+            </div>
+            <div class="main-title border-bottom h2">Chi tiết sản phẩm</div>
+            <div class="product-description mt-4">
+                @Html.Raw(Model.description)
+            </div>
+
+        </div>
+    </div>
+</div>

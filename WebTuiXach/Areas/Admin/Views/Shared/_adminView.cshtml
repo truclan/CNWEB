@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/asset/vendor/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/asset/css/style.css">
+
+    <title>Admin</title>
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white bdr-5 fixed-top w-100">
+        <a class="navbar-brand" href="@Url.Action("Index", "HomeAdmin")">Quản lý Shop túi xách</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="collapsibleNavId">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Search">
+                    <a href="#" class="btn btn-primary btn-sm bdr-none font-weight-bold">
+                        <span class="material-icons md-13">
+                            search
+                        </span>
+                    </a>
+                </div>
+            </form>
+            <button class="ml-2 btn btn-info btn-sm d-flex align-items-center justify-content-between">
+                Logout <span class="material-icons">
+                    login
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="col-2">
+            <div class="sidebar w-100 m-2 bdr-5">
+                <div class="dashboard-box">
+                    <div class="title mb-2">DashBoard</div>
+                    <a href="@Url.Action("Index", "HomeAdmin")" class="dashboard">Trang Chủ</a>
+                </div>
+                <div class="features-box">
+                    <div class="title mb-2">Chức năng</div>
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Product")">Quản lí Sản phẩm</a></li>
+                        <li><a href="@Url.Action("Index", "Category")">Quản lí Loại sản phẩm</a></li>
+                        @*<li><a href="#">Quản lí Tài khoản</a></li>*@
+                        <li><a href="@Url.Action("Index", "Cart")">Quản lí Hóa đơn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-10">
+
+            <div class="main w-100 m-2">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="../asset/vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../asset/vendor/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="../asset/vendor/popper/popper.min.js"></script>
+    @RenderSection("scripts", false);
+</body>
+
+</html>

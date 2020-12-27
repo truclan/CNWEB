@@ -1,0 +1,12 @@
+﻿@model List<WebTuiXach.Models.category>
+@{
+    Layout = null;
+}
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("loadProductById", "Home", new {@id = item.id })" class="list-group-item list-group-item-action">
+            @item.name
+        </a>
+    }
+</div>

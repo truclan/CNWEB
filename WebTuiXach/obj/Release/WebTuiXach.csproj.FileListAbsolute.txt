@@ -1,0 +1,167 @@
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\WebTuiXach.dll.config
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\WebTuiXach.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\WebTuiXach.pdb
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\csc.exe
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\csc.exe.config
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\csc.rsp
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\csi.exe
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\csi.exe.config
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\csi.rsp
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.AppContext.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Console.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.Compression.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.Pipes.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Claims.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.ValueTuple.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.XPath.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\vbc.exe
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\vbc.exe.config
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\vbc.rsp
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\VBCSCompiler.exe
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Antlr3.Runtime.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\EntityFramework.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\EntityFramework.SqlServer.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Newtonsoft.Json.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\PagedList.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\PagedList.Mvc.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Helpers.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Mvc.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Optimization.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Razor.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Deployment.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Razor.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\WebGrease.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\EntityFramework.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\EntityFramework.SqlServer.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\PagedList.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\PagedList.Mvc.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Helpers.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Mvc.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Optimization.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.Razor.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Deployment.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Razor.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Newtonsoft.Json.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Antlr3.Runtime.pdb
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.csproj.CoreCompileInputs.cache
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.csproj.CopyComplete
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.dll
+C:\Users\leewo\source\repos\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.pdb
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\WebTuiXach.dll.config
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\WebTuiXach.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\WebTuiXach.pdb
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\csc.exe
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\csc.exe.config
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\csc.rsp
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\csi.exe
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\csi.exe.config
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\csi.rsp
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.AppContext.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Collections.Immutable.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Console.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.Compression.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.FileSystem.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.IO.Pipes.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Reflection.Metadata.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.AccessControl.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Claims.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.ValueTuple.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.XPath.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\vbc.exe
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\vbc.exe.config
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\vbc.rsp
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\VBCSCompiler.exe
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\roslyn\VBCSCompiler.exe.config
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Antlr3.Runtime.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\EntityFramework.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\EntityFramework.SqlServer.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Microsoft.Web.Infrastructure.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Newtonsoft.Json.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\PagedList.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\PagedList.Mvc.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Helpers.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Mvc.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Optimization.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Razor.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Deployment.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Razor.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\WebGrease.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\EntityFramework.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\EntityFramework.SqlServer.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\PagedList.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\PagedList.Mvc.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Helpers.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Mvc.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Optimization.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.Razor.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Deployment.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\System.Web.WebPages.Razor.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Newtonsoft.Json.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Antlr3.Runtime.pdb
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.csproj.CoreCompileInputs.cache
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.csproj.CopyComplete
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.dll
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.pdb
+E:\Du lieu\ASP\WebTuiXach\WebTuiXach\obj\Release\WebTuiXach.csprojAssemblyReference.cache
